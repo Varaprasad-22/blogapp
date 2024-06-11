@@ -1,0 +1,52 @@
+post http://localhost:4000/admin-api/admin
+Content-Type: application/json
+
+{
+    "userType":"admin",
+    "userName":"bhanu",
+    "password":"bhanu",
+    "email":"bhanu@gmail.com",
+    "status":true
+}
+
+###login check
+POST http://localhost:4000/admin-api/login
+Content-Type: application/json
+
+{
+    "userType":"user",
+    "userName":"bhanu",
+    "password":"bhanu"
+    
+}
+
+
+###reading users
+get http://localhost:4000/admin-api/usercollection
+
+
+###reading authors
+get http://localhost:4000/admin-api/authorcollection
+
+
+###reading articles
+get http://localhost:4000/admin-api/articles
+
+###delte user
+put   http://localhost:4000/admin-api/user/bhanu
+Content-Type: application/json
+
+{
+    "userName":"bhanu",
+    "status":false
+
+}
+
+###delte author
+put  http://localhost:4000/admin-api/author/achyuth
+Content-Type: application/json
+
+{
+    "userName":"achyuth"
+
+}

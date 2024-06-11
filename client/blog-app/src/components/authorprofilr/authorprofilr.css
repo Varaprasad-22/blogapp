@@ -1,0 +1,24 @@
+/* authorprofile.css */
+
+.author-profile {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.author-profile .nav {
+  justify-content: space-between;
+}
+
+.author-profile .nav-link {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.author-profile .nav-link:hover {
+  color: #666;
+}

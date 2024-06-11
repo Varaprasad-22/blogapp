@@ -1,0 +1,31 @@
+/* Home.css */
+.home {
+  padding: 50px;
+}
+
+.home h1 {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.articleImage {
+  max-width: 30%;
+  
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:5%;
+  margin-bottom: 20px;
+}
+
+.data {
+  color: #333;
+  font-size: 18px;
+  line-height: 1.6;
+}

@@ -1,0 +1,76 @@
+###register
+POST http://localhost:4000/author-api/register
+Content-Type: application/json
+
+{
+    "userType":"author",
+    "userName":"ravi",
+    "password":"ravi",
+    "mail":"x@gmail.com"
+}
+
+
+###login
+POST http://localhost:4000/author-api/login
+Content-Type: application/json
+
+{
+    "userType":"author",
+    "userName":"ravi",
+    "password":"ravi"
+}
+
+
+
+###article entry
+POST http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "id":"{{$timestamp}}",
+    "title":"java",
+    "category":"program",
+    "content":"Java is a widely-used programming language for coding web applications. It has been a popular choice among developers for over two decades, with millions of Java applications in use today. Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself.",
+    "dateofcreation":"{{$datetime iso8601}}",
+    "dateofmodification":"{{$datetime iso8601}}",
+    "username":"ravi",
+    "comments":[],
+    "status":true
+}
+
+###edit the article 
+put http://localhost:4000/author-api/article
+Content-Type: application/json
+
+{
+    "id":"1714055907",
+    "title":"java",
+    "category":"program",
+    "content":"Java is a widely-used programming",
+    "dateofcreation":"2024-04-25T14:38:27.955Z",
+    "dateofmodification":"{{$datetime iso8601}}",
+    "username":"ravi",
+    "comments":[],
+    "status":true
+}
+
+
+###delete article
+PUT http://localhost:4000/author-api/article/1714055907
+Content-Type: application/json
+
+{
+    "id":"1714055907",
+    "title":"java",
+    "category":"program",
+    "content":"Java is a widely-used programming",
+    "dateofcreation":"2024-04-25T14:38:27.955Z",
+    "dateofmodification":"{{$datetime iso8601}}",
+    "username":"ravi",
+    "comments":[],
+    "status":false
+}
+
+
+###view articles
+get http://localhost:4000/author-api/view/ravi

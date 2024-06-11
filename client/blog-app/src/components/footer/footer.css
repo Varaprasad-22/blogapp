@@ -1,0 +1,42 @@
+/* footer.css */
+
+.bg-footer {
+  background-color: #333;
+  padding: 2rem;
+  color: #fff;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: black;
+}
+
+.contact-info {
+  font-size: 1.1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.footer-alt {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #ccc;
+  margin-top: 1rem;
+}
+.bg-footer {
+  background-color: #666;
+  padding: 2rem;
+  color: black;
+}

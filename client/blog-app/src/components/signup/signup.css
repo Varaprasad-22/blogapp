@@ -1,0 +1,12 @@
+
+.text-light {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-light:hover {
+  background-color: #444;
+}

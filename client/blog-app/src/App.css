@@ -1,0 +1,37 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto; /* Footer will stick to the bottom */
+  background-color: #343a40; /* Dark background color for the footer */
+  color: #ffffff; /* White text color for the footer */
+  padding: 20px; /* Add some padding for better spacing */
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Content will be evenly distributed */
+}
+
+.footer-links {
+  list-style-type: none; /* Remove bullet points from list */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-link {
+  margin-right: 20px; /* Add space between links */
+  color: #ffffff; /* White text color for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
